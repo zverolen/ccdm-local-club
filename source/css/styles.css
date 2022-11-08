@@ -345,6 +345,12 @@ li {
   }
 }
 
+@media only screen and (max-width: 415px) {
+  .event {
+    height: 410px;
+  }
+}
+
 .event-container {
   width: 95%;
   max-width: 1352px;
@@ -402,6 +408,12 @@ li {
   }
 }
 
+@media only screen and (max-width: 440px) {
+  .event-heading {
+    font-size: 24px;
+  }
+}
+
 .event-content {
   display: flex;
   justify-content: center;
@@ -428,6 +440,12 @@ li {
 @media only screen and (max-width: 770px) {
   .event-description {
     margin-bottom: 28px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .event-description {
+    margin-bottom: 20px;
   }
 }
 
@@ -494,7 +512,6 @@ li {
   box-sizing: border-box;
   display: block;
   height: 132px;
-  /* margin-bottom: 30px; */
   border: 1px solid transparent;
 }
 
@@ -510,13 +527,14 @@ li {
   }
 }
 
-.event-dynamic-container.hidden {
-  display: none;
+@media only screen and (max-width: 415px) {
+  .event-dynamic-container {
+    height: 120px;
+  }
 }
 
-.event-fields {
-  margin-bottom: 20px;
-  font-size: 20px;
+.event-dynamic-container.hidden {
+  display: none;
 }
 
 .event-inputGroup {
@@ -531,9 +549,28 @@ li {
   }
 }
 
+@media only screen and (max-width: 415px) {
+  .event-inputGroup {
+    margin-bottom: 2px;
+  }
+}
+
 .event-signup label {
   display: inline-block;
   margin-right: 10px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 590px) {
+  .event-signup label {
+    margin-right: 4px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .event-signup label {
+    font-size: 16px;
+  }
 }
 
 .event-signup input {
@@ -547,6 +584,12 @@ li {
   border-bottom: 2px solid #F2FFE3;
   background-color: transparent;
   border-radius: 0;
+}
+
+@media only screen and (max-width: 415px) {
+  .event-signup input {
+    font-size: 16px;
+  }
 }
 
 .event-signup input:focus {
@@ -576,10 +619,21 @@ li {
   }
 }
 
+@media only screen and (max-width: 415px) {
+  .event-signup-text {
+    font-size: 14px;
+  }
+}
+
 .event-success p {
   margin-top: 3px;
-  /* margin-bottom: 30px; */
   font-size: 20px;
+}
+
+@media only screen and (max-width: 415px) {
+  .event-success p {
+    font-size: 18px;
+  }
 }
 
 .event-button {
@@ -604,6 +658,12 @@ li {
   transition-duration: 0.5s;
 }
 
+@media only screen and (max-width: 415px) {
+  .event-button {
+    padding: 10px 35px;
+  }
+}
+
 .event-button:hover {
   color: #F2FFE3;
 
@@ -624,6 +684,12 @@ li {
 @media only screen and (max-width: 590px) {
   .gallery-heading {
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .gallery-heading {
+    font-size: 24px;
   }
 }
 
