@@ -65,13 +65,15 @@
               <div aria-hidden="false" id="js-signup-group" class="event-dynamic-container" aria-label="Please, fill in the sign up form to make sure no one is left behind in our flight!">
                 <form class="event-form" action="">
                   <div class="event-fields">
-                    <div class="event-inputGroup">
-                      <label for="name">How We Call You</label>
-                      <input aria-label="Enter you name" id="name" name="name" type="text">
-                    </div>
-                    <div class="event-inputGroup">
-                      <label for="email">Your Email</label>
-                      <input aria-label="Enter you Email" id="email" name="email" type="text">
+                    <div class="event-fixedHeight">
+                      <div class="event-inputGroup">
+                        <label for="name">How We Call You</label>
+                        <input aria-label="Enter you name" id="name" name="name" type="text">
+                      </div>
+                      <div class="event-inputGroup">
+                        <label for="email">Your Email</label>
+                        <input aria-label="Enter you Email" id="email" name="email" type="text">
+                      </div>
                     </div>
                   </div>
                   <button aria-label="submit button" id="js-submitButton" class="event-button">Count me in!</button>
@@ -80,8 +82,10 @@
               </div>
               <!-- Event Success Message -->
               <div aria-hidden="true" id="js-success-group" class="event-dynamic-container event-success hidden">
-                <p>You've been added! Check up your email!</p>
-                <button id="js-backButton" class="event-button">Back!</button>
+                <div class="event-fixedHeight">
+                  <p>You've been added! Check up your email!</p>
+                </div>
+                <button id="js-backButton" class="event-button">Go Back</button>
               </div>
             </div>
           </div>

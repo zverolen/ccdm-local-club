@@ -92,9 +92,17 @@ li {
   }
 }
 
-@media only screen and (max-width: 440px) {
+/* @media only screen and (max-width: 440px) {
   .intro {
     margin-bottom: 12px;
+  }
+} */
+
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .intro {
+    padding-top: 35px;
+    margin-bottom: 30px;
   }
 }
 
@@ -132,10 +140,18 @@ li {
   }
 }
 
-@media only screen and (max-width: 440px) {
+/* @media only screen and (max-width: 440px) {
   .intro-heading-container {
     width: 330px;
     margin-bottom: 40px;
+  }
+} */
+
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .intro-heading-container {
+    width: 290px;
+    margin-bottom: 35px;
   }
 }
 
@@ -174,10 +190,17 @@ li {
   }
 }
 
-@media only screen and (max-width: 440px) {
+/* @media only screen and (max-width: 440px) {
   .intro-heading {
     margin-top: 20px;
     font-size: 24px;
+  }
+} */
+
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .intro-heading {
+    font-size: 23px;
   }
 }
 
@@ -203,9 +226,16 @@ li {
   }
 }
 
-@media only screen and (max-width: 440px) {
+/* @media only screen and (max-width: 440px) {
   .intro-logo {
     width: 64px;
+  }
+} */
+
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .intro-logo {
+    width: 55px;
   }
 }
 
@@ -540,20 +570,27 @@ li {
 
 @media only screen and (max-width: 528px) {
   .event {
-    height: 452px;
+    height: 438px;
   }
 }
 
-@media only screen and (max-width: 440px) {
+/* @media only screen and (max-width: 440px) {
   .event {
     height: 436px;
     padding-top: 36px;
   }
-}
+} */
 
-@media only screen and (max-width: 415px) {
+/* @media only screen and (max-width: 415px) {
   .event {
-    height: 410px;
+    height: 380px;
+  }
+} */
+
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .event {
+    height: 480px;
   }
 }
 
@@ -566,7 +603,7 @@ li {
 
 @media only screen and (max-width: 904px) {
   .event-container {
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -633,7 +670,7 @@ li {
 
 .event-description {
   flex-basis: 40%;
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
 @media only screen and (max-width: 904px) {
@@ -649,9 +686,16 @@ li {
   }
 }
 
-@media only screen and (max-width: 415px) {
+/* @media only screen and (max-width: 415px) {
   .event-description {
     margin-bottom: 20px;
+  }
+} */
+
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .event-description {
+    margin-bottom: 30px;
   }
 }
 
@@ -685,6 +729,13 @@ li {
   }
 }
 
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .event-description p {
+    font-size: 28px;
+  }
+}
+
 .event-description p:first-child {
   margin-bottom: 20px;
 }
@@ -702,15 +753,15 @@ li {
 }
 
 .event-signup {
-  flex-basis: 40%;
-  margin-left: 40px;
+  flex-basis: 54%;
+  margin-left: 35px;
 }
 
-@media only screen and (max-width: 1001px) {
+/* @media only screen and (max-width: 1001px) {
   .event-signup {
     flex-basis: 46%;
   }
-}
+} */
 
 @media only screen and (max-width: 904px) {
   .event-signup {
@@ -723,11 +774,11 @@ li {
 
   box-sizing: border-box;
   display: block;
-  height: 132px;
+  /* height: 132px; */
   border: 1px solid transparent;
 }
 
-@media only screen and (max-width: 904px) {
+/* @media only screen and (max-width: 904px) {
   .event-dynamic-container {
     height: 162px;
   }
@@ -743,10 +794,32 @@ li {
   .event-dynamic-container {
     height: 120px;
   }
-}
+} */
 
 .event-dynamic-container.hidden {
   display: none;
+}
+.event-fixedHeight {
+  height: 73px;
+}
+
+@media only screen and (max-width: 770px) {
+  .event-fixedHeight {
+    height: 67px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .event-fixedHeight {
+    height: 53px;
+  }
+}
+
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .event-fixedHeight {
+    height: 122px;
+  }
 }
 
 .event-inputGroup {
@@ -761,9 +834,22 @@ li {
   }
 }
 
-@media only screen and (max-width: 415px) {
+/* @media only screen and (max-width: 415px) {
   .event-inputGroup {
     margin-bottom: 2px;
+  }
+} */
+
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .event-inputGroup {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 0;
+  }
+
+  .event-inputGroup:first-child {
+    margin-bottom: 20px;
   }
 }
 
@@ -780,8 +866,16 @@ li {
   }
 }
 
-@media only screen and (max-width: 415px) {
+/* @media only screen and (max-width: 415px) {
   .event-signup label {
+    font-size: 16px;
+  }
+} */
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .event-signup label {
+    margin-right: 0;
+    margin-bottom: 4px;
     font-size: 16px;
   }
 }
@@ -805,7 +899,8 @@ li {
   }
 }
 
-@media only screen and (max-width: 415px) {
+/* @media only screen and (max-width: 415px) { */
+@media only screen and (max-width: 460px) {
   .event-signup input {
     font-size: 16px;
   }
@@ -817,30 +912,29 @@ li {
 }
 
 .event-signup-text {
-  margin-top: 80px;
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 904px) {
   .event-signup-text {
-    margin-top: 108px;
+    margin-top: 12px;
   }
 }
 
 @media only screen and (max-width: 770px) {
   .event-signup-text {
-    margin-top: 86px;
+    /* margin-top: 86px; */
   }
 }
 
-@media only screen and (max-width: 415px) {
+/* @media only screen and (max-width: 415px) {
   .event-signup-text {
     margin-top: 76px;
     font-size: 14px;
   }
-}
+} */
 
 .event-success p {
-  margin-top: 3px;
   font-size: 20px;
 }
 
@@ -858,11 +952,12 @@ li {
 }
 
 .event-button {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; */
   padding: 10px 50px;
   margin-left: 2px;
+  margin-top: 24px;
   
   color: #EF5F3B;
   font-family: 'Noto Sans', sans-serif;
@@ -882,6 +977,13 @@ li {
 @media only screen and (max-width: 904px) {
   .event-button {
     padding: 10px 35px;
+  }
+}
+
+@media only screen and (max-width: 904px) {
+  .event-button {
+    padding: 7px 24px;
+    font-size: 13px;
   }
 }
 
