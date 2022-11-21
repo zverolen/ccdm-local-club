@@ -1,6 +1,8 @@
 .signup {
+  position: relative;
+
   box-sizing: border-box;
-  /* height: 420px; */
+  height: 420px;
   margin-bottom: 60px;
   padding-top: 60px;
   color: #F2FFE3;
@@ -9,25 +11,25 @@
 
 @media only screen and (max-width: 1001px) {
   .signup {
-    /* height: 390px; */
+    height: 390px;
   }
 }
 
 @media only screen and (max-width: 904px) {
   .signup {
-    /* height: 536px; */
+    height: 536px;
   }
 }
 
 @media only screen and (max-width: 780px) {
   .signup {
-    /* height: 526px; */
+    height: 526px;
   }
 }
 
 @media only screen and (max-width: 770px) {
   .signup {
-    /* height: 474px; */
+    height: 474px;
     padding-top: 44px;
   }
 }
@@ -40,7 +42,7 @@
 
 @media only screen and (max-width: 590px) {
   .signup {
-    /* height: 440px; */
+    height: 440px;
   }
 }
 
@@ -52,27 +54,27 @@
 
 @media only screen and (max-width: 528px) {
   .signup {
-    /* height: 438px; */
+    height: 438px;
   }
 }
 
-/* @media only screen and (max-width: 440px) {
+@media only screen and (max-width: 440px) {
   .signup {
     height: 436px;
     padding-top: 36px;
   }
-} */
+}
 
-/* @media only screen and (max-width: 415px) {
+@media only screen and (max-width: 415px) {
   .signup {
     height: 380px;
   }
-} */
+}
 
 /* @media only screen and (max-width: 350px) { */
 @media only screen and (max-width: 460px) {
   .signup {
-    /* height: 480px; */
+    height: 480px;
   }
 }
 
@@ -252,34 +254,34 @@
   }
 }
 
-.signup-fixedHeight {
+/* .signup-fixedHeight {
   position: relative;
   height: 73px;
-}
+} */
 
-@media only screen and (max-width: 770px) {
+/* @media only screen and (max-width: 770px) {
   .signup-fixedHeight {
     height: 67px;
   }
-}
+} */
 
-@media only screen and (max-width: 415px) {
+/* @media only screen and (max-width: 415px) {
   .signup-fixedHeight {
     height: 53px;
   }
-}
+} */
 
 /* @media only screen and (max-width: 350px) { */
-@media only screen and (max-width: 460px) {
+/* @media only screen and (max-width: 460px) {
   .signup-fixedHeight {
     height: 126px;
   }
-}
+} */
 
 /* Hiding and showing container */
 
 .signup-dynamicContainer {
-  position: relative;
+  /* position: relative; */
 
   box-sizing: border-box;
   /* height: 132px; */
@@ -419,6 +421,12 @@
       /* margin-top: 86px; */
     }
   }
+
+  @media only screen and (max-width: 460px) {
+    .signup-formExplanation {
+      margin-top: 85px;
+    }
+  }
   
   /* @media only screen and (max-width: 415px) {
     .signup-formExplanation {
@@ -446,7 +454,7 @@
 
 .signup button {
   position: absolute;
-  bottom: -60px;
+  bottom: 100px;
   padding: 10px 50px;
 
   margin-left: 2px;
@@ -466,16 +474,57 @@
   transition-duration: 0.5s;
 }
 
-@media only screen and (max-width: 904px) {
+@media only screen and (max-width: 1083px) {
   .signup button {
-    padding: 10px 35px;
+    bottom: 110px;
+  }
+}
+
+@media only screen and (max-width: 1001px) {
+  .signup button {
+    bottom: 90px;
   }
 }
 
 @media only screen and (max-width: 904px) {
   .signup button {
+    bottom: 125px;
+
+    padding: 10px 35px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .signup button {
+    bottom: 115px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .signup button {
+    bottom: 105px;
+  }
+}
+
+@media only screen and (max-width: 732px) {
+  .signup button {
+    bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .signup button {
+    /* bottom: 75px; */
+
     padding: 7px 24px;
+
     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .signup button {
+    bottom: 90px;
   }
 }
 
