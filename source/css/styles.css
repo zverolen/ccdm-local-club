@@ -51,6 +51,10 @@ li {
   list-style: none;
 }
 
+input {
+  margin: 0;
+}
+
 .illustration-container {
   overflow: hidden;
 }
