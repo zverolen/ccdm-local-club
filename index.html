@@ -66,7 +66,7 @@
             <div class="signup-form">
               <!-- Form -->
 
-              <div id="js-signup-dynamicContainer" class="signup-dynamicContainer" aria-hidden="false" aria-label="Please, fill in the sign up form to make sure no one is left behind in our flight!">
+              <div id="js-signupForm" class="signup-dynamicContainer" aria-hidden="false" aria-label="Please, fill in the sign up form to make sure no one is left behind in our flight!">
 
                 <form id="signup-form" action="">
                   <div class="signup-inputGroup">
@@ -78,28 +78,27 @@
                     <label for="singup-email">Your Email</label>
                     <input aria-label="Enter you Email" id="singup-email" name="email" type="email">
                   </div>
+
+                  <p role="none" class="signup-formExplanation">We need to know the participants so no one is left behind.</p>
                 </form>
 
-                <p role="none" class="signup-formExplanation">We need to know the participants so no one is left behind.</p>
-
+                </div>
 
                 <!-- Success Message -->
 
-                <!-- <div class="signup-dynamicContainer" aria-hidden="true">
+                <div id="js-successMessage" class="signup-dynamicContainer" aria-hidden="true">
                   <div aria-hidden="true" id="js-success-group" class="event-dynamic-container event-success hidden">
                       <p class="signup-successMessage">You've been added! Check up your email!</p>
                   </div>
-                </div> -->
+                </div>
 
                 <!-- Button -->
 
-                <button form="signup-form" aria-label="submit button" id="js-button">
-                  <span id="js-button-succesMessage" aria-hidden="false">Count me in!</span>
-                  <!-- <span id="js-button-goBackMessage" aria-hidden="true">Go Back</span> -->
+                <button form="signup-form" aria-label="submit button" id="js-signupButton">
+                  <span class="signup-buttonMessage" id="js-signupButtonMessage" aria-hidden="false">Count me in!</span>
+                  <span class="signup-buttonMessage" id="js-successButtonMessage" aria-hidden="true">Go Back</span>
                 </button>
 
-              </div>  
-              
             </div>
           </div>
         </div>
@@ -183,6 +182,6 @@
         </section>
       </div>
     </footer>
-    <!-- <script src="./source/js/script.js"></script> -->
+    <script src="./source/js/script.js"></script>
   </body>
 </html>

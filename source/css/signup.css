@@ -506,3 +506,11 @@
 
   background-color: #3F433A;
 }
+
+.signup-buttonMessage[aria-hidden="false"] {
+  display: block;
+}
+
+.signup-buttonMessage[aria-hidden="true"] {
+  display: none;
+}
