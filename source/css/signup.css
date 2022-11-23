@@ -275,30 +275,10 @@
 /* Hiding and showing container */
 
 .signup-dynamicContainer {
-  /* position: relative; */
-
   box-sizing: border-box;
-  /* height: 132px; */
+
   border: 1px solid transparent;
 }
-
-/* @media only screen and (max-width: 904px) {
-  .signup-dynamicContainer {
-    height: 162px;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .signup-dynamicContainer {
-    height: 140px;
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .signup-dynamicContainer {
-    height: 120px;
-  }
-} */
 
 .signup-dynamicContainer[aria-hidden="false"] {
   display: block;
@@ -322,120 +302,107 @@
   }
 }
 
-/* @media only screen and (max-width: 415px) {
+@media only screen and (max-width: 460px) {
   .signup-inputGroup {
-    margin-bottom: 2px;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 0;
+  }
+
+  .signup-inputGroup:first-child {
+    margin-bottom: 20px;
+  }
+}
+  
+.signup label {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 590px) {
+  .signup label {
+    font-size: 18px;
+    margin-right: 4px;
+  }
+}
+  
+@media only screen and (max-width: 460px) {
+  .signup label {
+    margin-right: 0;
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+}
+  
+.signup input {
+  flex-grow: 1;
+
+  display: inline-block;
+
+  font-size: 20px;
+  color: #F2FFE3;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+
+  border: none;
+  border-bottom: 2px solid #F2FFE3;
+  border-radius: 0;
+
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 590px) {
+  .signup input {
+    font-size: 18px;
+  }
+}
+
+/* @media only screen and (max-width: 415px) { */
+@media only screen and (max-width: 460px) {
+  .signup input {
+    font-size: 16px;
+  }
+}
+
+.signup input:focus {
+  border-radius: 0;
+  outline-offset: 1px;
+}
+
+.signup-formExplanation {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 460px) {
+  .signup-formExplanation {
+    margin-top: 85px;
+  }
+}
+
+/* @media only screen and (max-width: 415px) {
+  .signup-formExplanation {
+    margin-top: 76px;
+    font-size: 14px;
   }
 } */
 
-/* @media only screen and (max-width: 350px) { */
-  @media only screen and (max-width: 460px) {
-    .signup-inputGroup {
-      flex-direction: column;
-      align-items: stretch;
-      margin-bottom: 0;
-    }
-  
-    .signup-inputGroup:first-child {
-      margin-bottom: 20px;
-    }
-  }
-  
-  .signup label {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 20px;
-  }
-  
-  @media only screen and (max-width: 590px) {
-    .signup label {
-      font-size: 18px;
-      margin-right: 4px;
-    }
-  }
-  
-  /* @media only screen and (max-width: 415px) {
-    .signup label {
-      font-size: 16px;
-    }
-  } */
-  /* @media only screen and (max-width: 350px) { */
-  @media only screen and (max-width: 460px) {
-    .signup label {
-      margin-right: 0;
-      margin-bottom: 4px;
-      font-size: 16px;
-    }
-  }
-  
-  .signup input {
-    flex-grow: 1;
+.signup-successMessage p {
+  font-size: 20px;
+}
 
-    display: inline-block;
-
-    font-size: 20px;
-    color: #F2FFE3;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 300;
-
-    border: none;
-    border-bottom: 2px solid #F2FFE3;
-    border-radius: 0;
-
-    background-color: transparent;
-  }
-  
-  @media only screen and (max-width: 590px) {
-    .signup input {
-      font-size: 18px;
-    }
-  }
-  
-  /* @media only screen and (max-width: 415px) { */
-  @media only screen and (max-width: 460px) {
-    .signup input {
-      font-size: 16px;
-    }
-  }
-  
-  .signup input:focus {
-    border-radius: 0;
-    outline-offset: 1px;
-  }
-
-  .signup-formExplanation {
-    margin-top: 100px;
-  }
-  
-  @media only screen and (max-width: 460px) {
-    .signup-formExplanation {
-      margin-top: 85px;
-    }
-  }
-  
-  /* @media only screen and (max-width: 415px) {
-    .signup-formExplanation {
-      margin-top: 76px;
-      font-size: 14px;
-    }
-  } */
-
+@media only screen and (max-width: 590px) {
   .signup-successMessage p {
-    font-size: 20px;
+    font-size: 18px;
+    margin-right: 4px;
   }
-  
-  @media only screen and (max-width: 590px) {
-    .signup-successMessage p {
-      font-size: 18px;
-      margin-right: 4px;
-    }
+}
+
+@media only screen and (max-width: 415px) {
+  .signup-successMessage p {
+    font-size: 16px;
   }
-  
-  @media only screen and (max-width: 415px) {
-    .signup-successMessage p {
-      font-size: 16px;
-    }
-  }
+}
 
 .signup button {
   position: absolute;
@@ -507,10 +474,10 @@
   background-color: #3F433A;
 }
 
-.signup-buttonMessage[aria-hidden="false"] {
+.signup button[aria-hidden="false"] {
   display: block;
 }
 
-.signup-buttonMessage[aria-hidden="true"] {
+.signup button[aria-hidden="true"] {
   display: none;
 }
