@@ -1,57 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Night Flight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./source/css/styles.css">
+  </head>
   <body>
-    <head>
-      <title>Night Flight</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="./source/css/styles.css">
-    </head>
-    <main role="presentation">
-      <section class="intro">
-        <div class="intro-heading-container">
-          <img role="none" class="intro-logo" src="./source/images/temp-logo2.svg" alt="The Night Flight logo">
-          <h1 class="intro-heading">Night Flight Club</h1>
-          <img role="none" class="intro-logo" src="./source/images/temp-logo2.svg" alt="The Night Flight logo">
+    <main>
+      <!-- Intro -->
+      <section>
+        <div class="intro">
+          <div class="intro-heading-container">
+            <img class="intro-logo" src="./source/images/temp-logo2.svg" alt="">
+            <h1 class="intro-heading">Night Flight Club</h1>
+            <img class="intro-logo" src="./source/images/temp-logo2.svg" alt="">
+          </div>
+          <p class="intro-moto">Don't be left out! Join our crowd!</p>
         </div>
-        <p class="intro-moto">Don't be left out! Join our crowd!</p>
-      </section>
-      <section class="bats-gallery">
-        <div class="bats-gallery-container" aria-label="Our members">
-          <div class="bats-gallery-item illustration-container">
-            <img class="illustration-item" src="./source/images/caren-bat-1.jpg" alt="Caren">
+        <div class="bats-gallery">
+          <div class="bats-gallery-container" aria-label="Our members">
+            <div class="bats-gallery-item illustration-container">
+              <img class="illustration-item" src="./source/images/caren-bat-1.jpg" alt="Caren">
+            </div>
+            <div class="bats-gallery-item illustration-container">
+              <img class="illustration-item" src="./source/images/billy-bat-2.jpg" alt="Billy">
+            </div>
+            <div class="bats-gallery-item illustration-container">
+              <img class="illustration-item" src="./source/images/nadine-bat-3.jpg" alt="Nadine">
+            </div>
+            <div class="bats-gallery-item illustration-container">
+              <img class="illustration-item" src="./source/images/creg-bat-4.jpg" alt="Creg">
+            </div>
+            <div class="bats-gallery-item illustration-container">
+              <img class="illustration-item" src="./source/images/kate-bat-5.jpg" alt="Kate">
+            </div>
+            <div class="bats-gallery-item illustration-container">
+              <img class="illustration-item" src="./source/images/michael-bat-6.jpg" alt="Michael">
+            </div>
+            <div class="bats-gallery-item illustration-container">
+              <img class="illustration-item" src="./source/images/natalie-bat-7.jpg" alt="Natalie">
+            </div>
           </div>
-          <div class="bats-gallery-item illustration-container">
-            <img class="illustration-item" src="./source/images/billy-bat-2.jpg" alt="Billy">
-          </div>
-          <div class="bats-gallery-item illustration-container">
-            <img class="illustration-item" src="./source/images/nadine-bat-3.jpg" alt="Nadine">
-          </div>
-          <div class="bats-gallery-item illustration-container">
-            <img class="illustration-item" src="./source/images/creg-bat-4.jpg" alt="Creg">
-          </div>
-          <div class="bats-gallery-item illustration-container">
-            <img class="illustration-item" src="./source/images/kate-bat-5.jpg" alt="Kate">
-          </div>
-          <div class="bats-gallery-item illustration-container">
-            <img class="illustration-item" src="./source/images/michael-bat-6.jpg" alt="Michael">
-          </div>
-          <div class="bats-gallery-item illustration-container">
-            <img class="illustration-item" src="./source/images/natalie-bat-7.jpg" alt="Natalie">
-          </div>
+          <p class="bats-gallery-text">Just to name a few!</p>
         </div>
-        <p class="bats-gallery-text">Just to name a few!</p>
       </section>
+
+      <!-- Description -->
+
       <section class="description" aria-label="What is Night Flight?">
-        <h2 role="none" class="description-heading">Night Flight is a community of Sydney vampires who are sick of staying all creepy and lonely.</h2>
+        <h2 class="description-heading">Night Flight is a community of Sydney vampires who are sick of staying all creepy and lonely.</h2>
         <div class="description-text">
           <p>We transform into bats and fly under the stars<br>two or three times per month.</p>
           <p>Enjoy the freedom and the fellowship.</p>
           <p>Feel the respect. Feel the support.</p>
         </div>
       </section>
+
+      <!-- Sign Up -->
+
       <section id="signup" class="signup">
         <div class="signup-container">
           <h2 class="signup-heading">Join our next flight!</h2>
@@ -71,15 +81,15 @@
                 <form id="signup-form" action="">
                   <div class="signup-inputGroup">
                     <label for="singup-name">How We Call You</label>
-                    <input aria-label="Enter you name" id="singup-name" name="name" type="text">
+                    <input aria-label="Enter you name" id="singup-name" name="name" type="text" autocomplete="given-name">
                   </div>
 
                   <div class="signup-inputGroup">
                     <label for="singup-email">Your Email</label>
-                    <input aria-label="Enter you Email" id="singup-email" name="email" type="email">
+                    <input aria-label="Enter you Email" id="singup-email" name="email" type="email" autocomplete="email">
                   </div>
 
-                  <p role="none" class="signup-formExplanation">We need to know the participants so no one is left behind.</p>
+                  <p class="signup-formExplanation">We need to know the participants so no one is left behind.</p>
 
                   <!-- Button -->
 
@@ -149,12 +159,12 @@
     <footer>
       <div class="footer-top-section">
         <section class="cta">
-          <a aria-label="Go to the signup form" class="cta-link" href="#signup">Join the Flock!</a>
+          <a aria-label="Go to the signup form" class="cta-link" href="#signup">Join Night Flight!</a>
         </section>
       </div>
       <div class="footer-bottom-section">
         <section aria-label="Links to photos used on this website" class="footer-credit-container">
-          <h3 role="none" class="footer-credit-heading">Photo Credit</h3>
+          <h2 class="footer-credit-heading">Photo Credit</h2>
           <a class="footer-credit-link" href="https://unsplash.com/photos/fC2bnCRAvvY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Caren</a>
           <span class="footer-link-separator" role="none">|</span>
           <a class="footer-credit-link" href="https://unsplash.com/photos/Z00K8iSWpNc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Skyscrapers at night</a>
@@ -177,7 +187,7 @@
           <span class="footer-link-separator" role="none">|</span>
           <a class="footer-credit-link" href="https://unsplash.com/photos/FUh6nK3s0po?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Harbour Bridge from below</a>
           <span class="footer-link-separator" role="none">|</span>
-          <a class="footer-credit-link"href="https://unsplash.com/photos/einIuvtZen4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Opera House</a>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/einIuvtZen4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Opera House</a>
           <span class="footer-link-separator" role="none">|</span>
           <a class="footer-credit-link" href="https://unsplash.com/photos/Ev7rewOS5vo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Opera House with projected ornaments on it</a>
         </section>
