@@ -5,7 +5,7 @@ This project is a solution to a task at the Codecademy's Courses: to create a re
 
 ## Сharacteristics
 1. Designed in the browser.
-2. Imagery created in Photoshop, Inkscape and Figma using photos from photo libraries (credits included).
-3. Constantly being inmproved.
+2. Features a demo interactive sign up widget and responsive images.
+3. Imagery created in Photoshop, Inkscape and Figma using photos from photo libraries (credits included for Unsplash).
 
 MIT License
