@@ -8,12 +8,6 @@
   background-color: #007A78;
 }
 
-@media only screen and (max-width: 62.5625rem) {
-  .signup {
-    height: 35.625rem;
-  }
-}
-
 @media only screen and (max-width: 56.5rem) {
   .signup {
     height: 31.625rem;
@@ -68,12 +62,6 @@
 @media only screen and (max-width: 67.6875rem) {
   .signup-heading {
     margin-bottom: 3.125rem;
-  }
-}
-
-@media only screen and (max-width: 62.5625rem) {
-  .signup-heading {
-    margin-bottom: 2.375rem;
   }
 }
 
@@ -350,12 +338,6 @@
 @media only screen and (max-width: 67.6875rem) {
   .signup button {
     bottom: 6.875rem;
-  }
-}
-
-@media only screen and (max-width: 62.5625rem) {
-  .signup button {
-    bottom: 5.625rem;
   }
 }
 
