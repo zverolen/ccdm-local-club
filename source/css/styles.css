@@ -1,3 +1,7 @@
+/* Sign Up Component Import */
+
+@import 'signup.css';
+
 /* General Styles */
 
 html {
@@ -74,10 +78,6 @@ input {
   width: 100%;
   height: auto;
 }
-
-/* Sign Up Component Import */
-
-@import 'signup.css';
 
 /* Other Components */
 

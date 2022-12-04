@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=McLaren&family=Nanum+Pen+Script&family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="stylesheet" href="./source/css/styles.css">
   </head>
   <body>
     <main role="none">
@@ -145,20 +145,19 @@
                 <form id="signup-form" action="">
                   <div class="signup-inputGroup">
                     <label aria-hidden="true" for="singup-name">How We Call You</label>
-                    <input aria-label="Enter you name" id="singup-name" name="name" type="text" autocomplete="given-name" required>
+                    <input aria-label="Enter you name" id="singup-name" name="name" type="text" autocomplete="name">
                   </div>
 
                   <div class="signup-inputGroup">
                     <label aria-hidden="true" for="singup-email">Your Email</label>
-                    <input aria-label="Enter you Email" id="singup-email" name="email" type="email" autocomplete="email" required>
+                    <input aria-label="Enter you Email" id="singup-email" name="email" type="email" autocomplete="email">
                   </div>
 
                   <p aria-hidden="true" class="signup-formExplanation">We need to know the participants so no one is left behind.</p>
 
                   <!-- Button -->
 
-                  <!-- <button aria-label="submit button" id="js-signupButton" aria-hidden="false">Count me in</button> -->
-                  <button id="js-signupButton" aria-hidden="false">Count me in</button>
+                  <button aria-label="submit button" id="js-signupButton" aria-hidden="false">Count me in</button>
                 </form>
 
                 </div>
@@ -454,6 +453,6 @@
         </section>
       </div>
     </footer>
-    <script src="./public/js/script.js"></script>
+    <script src="./source/js/script.js"></script>
   </body>
 </html>
