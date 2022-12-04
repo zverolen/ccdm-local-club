@@ -6,14 +6,13 @@ const successButton = document.getElementById('js-successButton');
 
 const toggleSignupView = function(event) {
   event.preventDefault();
-  const initialAriaHiddenValue = signupForm.getAttribute('aria-hidden');
-  const convertedAriaHiddenValue = (initialAriaHiddenValue === 'true');
-  const reversedAriaHiddenValue = (!convertedAriaHiddenValue).toString();
+
+  const initialAriaHiddenValue = signupForm.getAttribute('hidden');
   
-  signupForm.setAttribute('aria-hidden', reversedAriaHiddenValue);
-  signupButton.setAttribute('aria-hidden', reversedAriaHiddenValue);
-  successMessage.setAttribute('aria-hidden', initialAriaHiddenValue);
-  successButton.setAttribute('aria-hidden', initialAriaHiddenValue);
+  signupForm.toggleAttribute('hidden');
+  signupButton.toggleAttribute('hidden');
+  successMessage.toggleAttribute('hidden');
+  successButton.toggleAttribute('hidden');
 };
 
 buttons.forEach((button) => {
