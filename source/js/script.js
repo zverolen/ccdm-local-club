@@ -1,18 +1,16 @@
 const signupForm = document.getElementById('js-signupForm');
 const successMessage = document.getElementById('js-successMessage');
-const buttons = document.querySelectorAll('button');
 const signupButton = document.getElementById('js-signupButton');
-const successButton = document.getElementById('js-successButton');
+const successMessageContent =  document.createElement('p');
+successMessageContent.textContent = 'You\'ve been added! Check up your email!';
+successMessageContent.className = 'signup-successMessage';
 
 const toggleSignupView = function(event) {
   event.preventDefault();
-
-  const initialAriaHiddenValue = signupForm.getAttribute('hidden');
-  
   signupForm.toggleAttribute('hidden');
   signupButton.toggleAttribute('hidden');
   successMessage.toggleAttribute('hidden');
-  successButton.toggleAttribute('hidden');
+  successMessage.appendChild(successMessageContent);
 };
 
 buttons.forEach((button) => {

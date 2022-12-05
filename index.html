@@ -157,20 +157,17 @@
 
                   <!-- Button -->
 
-                  <button aria-label="submit button" id="js-signupButton">Count me in</button>
+                  <button type="submit" id="js-signupButton">Count me in</button>
                 </form>
 
                 </div>
 
                 <!-- Success Message -->
 
-                <div id="js-successMessage" class="signup-dynamicContainer" hidden aria-label="Success">
-                  <div aria-hidden="true" id="js-success-group" class="event-dynamic-container event-success hidden">
-                      <p class="signup-successMessage">You've been added! Check up your email!</p>
+                <div id="js-successMessage" class="signup-dynamicContainer" hidden role="alert">
+                  <div aria-hidden="true" class="event-dynamic-container event-success hidden">
+                      <p id="js-signup-successMessageContent" class="signup-successMessage"></p>
                   </div>
-                  <!-- Button -->
-
-                <button form="signup-form" aria-label="go back button" id="js-successButton" hidden>Go Back</button>
 
                 </div>
             </div>
