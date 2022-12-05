@@ -13,6 +13,4 @@ const toggleSignupView = function(event) {
   successMessage.appendChild(successMessageContent);
 };
 
-buttons.forEach((button) => {
-  button.addEventListener('click', toggleSignupView); 
-});
+signupButton.addEventListener('click', toggleSignupView); 
