@@ -137,10 +137,10 @@
               <p>Sunday, October, 2 23:30</p>
               <p>Harbour National Park, at the Horny Lighthouse</p>
             </div>
-            <div id="js-signupForm" class="signup-form">
+            <div class="signup-form">
               <!-- Form -->
 
-              <div class="signup-dynamicContainer" aria-label="Please, fill in the sign up form so no one is left behind in our flight!">
+              <div id="js-signupForm" class="signup-dynamicContainer" aria-label="Please, fill in the sign up form so no one is left behind in our flight!">
 
                 <form id="signup-form" action="">
                   <div class="signup-inputGroup">
@@ -167,6 +167,7 @@
                 <div id="js-successMessage" class="signup-dynamicContainer" hidden role="alert">
                   <div aria-hidden="true" class="event-dynamic-container event-success hidden">
                       <p id="js-signup-successMessageContent" class="signup-successMessage"></p>
+                      <p>DEVELOPER NOTE: THIS HIDES THE CTA LINK IN THE FOOTER.</p>
                   </div>
 
                 </div>
@@ -415,7 +416,7 @@
     <footer role="none">
       <div class="footer-top-section">
         <section class="cta site-frame">
-          <a aria-label="Go to the sign up form" class="cta-link" href="#js-signupForm">Join Night Flight!</a>
+          <a id="js-ctaLink" aria-label="Go to the sign up form" class="cta-link" href="#js-signupForm">Join Night Flight!</a>
         </section>
       </div>
 
