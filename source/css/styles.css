@@ -454,6 +454,10 @@ input {
   }
 }
 
+.description-twoLineParagraph {
+  
+}
+
 .description-text p {
   font-size: 1.875rem;
   line-height: 1.8;
