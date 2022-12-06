@@ -197,14 +197,6 @@
   border: 0.0625rem solid transparent;
 }
 
-/* .signup-dynamicContainer[aria-hidden="false"] {
-  display: block;
-}
-
-.signup-dynamicContainer[aria-hidden="true"] {
-  display: none;
-} */
-
 /* Inputs */
 
 .signup-inputGroup {
@@ -377,11 +369,3 @@
 
   background-color: #3F433A;
 }
-
-/* .signup button[aria-hidden="false"] {
-  display: block;
-}
-
-.signup button[aria-hidden="true"] {
-  display: none;
-} */
