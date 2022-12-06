@@ -563,6 +563,8 @@ input {
   text-transform: uppercase;
   text-align: center;
   font-size: 1.875rem;
+  font-family: 'McLaren', cursive;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 56.25rem) {
